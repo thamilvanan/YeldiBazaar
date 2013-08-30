@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="10dp"
+    android:paddingTop="3dp" >
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="2dp"
+        android:padding="4dp"
+        android:scaleType="fitCenter" />
+    <LinearLayout
+        android:id="@+id/status_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+        <ImageView
+            android:id="@+id/icon_status_has_updates"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:gravity="end"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/icon_status_installed"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:gravity="end"
+            android:visibility="gone" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/status_icons"
+        android:layout_toRightOf="@id/icon"
+        android:ellipsize="marquee"
+        android:paddingBottom="2dp"
+        android:paddingTop="4dp"
+        android:singleLine="true"
+        android:text="Hello"
+        android:textColor="@color/bg8"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/name"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Hello"
+        android:textColor="@color/bg11"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/license"
+        android:layout_alignLeft="@id/name"
+        android:layout_toLeftOf="@id/license"
+        android:ellipsize="end"
+        android:paddingLeft="1dp"
+        android:singleLine="true"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/applist_summary_padding"
+        android:singleLine="true"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="greentear">#36511A</color>
+    <color name="skin">#E2CB9F</color>
+    <color name="grace">#B72549</color>
+    <color name="flatui1">#16A085</color>
+    <color name="flatui">#2C3E50</color>
+    <color name="flatui2">#3498DB</color>
+    <color name="flatui3">#BDC3C7</color>
+    <color name="bg2">#CF420C</color>
+    <color name="bg1">#F4FFE7</color>
+    <color name="bg3">#2E4C00</color>
+    <color name="bg4">#DB0A06</color>
+    <color name="bg5">#E47B00</color>
+    <color name="bg6">#151494</color>
+    <color name="bg7">#F2075D</color>
+    <color name="bg8">#CC2A41</color>
+    <color name="bg9">#E8CAA4</color>
+    <color name="bg10">#424254</color>
+    <color name="bg11">#351330</color>
+    <color name="transparent">#00000000</color>
+</resources>
