@@ -4,18 +4,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     <TextView
-        android:id="@+id/textView_desc"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/bg11"
-        android:gravity="fill|fill_horizontal"
-        android:text="@string/aboutyeldi"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/welcome_text"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/bg9" />
+        android:textColor="@color/white"
+        android:textStyle="bold" />
     <com.yeldi.bazaar.utils.StaggeredGridView
         android:id="@+id/staggeredGridView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/bg11" >
+        android:background="@color/black" >
     </com.yeldi.bazaar.utils.StaggeredGridView>
 </LinearLayout>

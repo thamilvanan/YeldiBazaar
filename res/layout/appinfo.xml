@@ -40,5 +40,6 @@
         android:id="@+id/permissions_list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:singleLine="false" />
+        android:singleLine="false"
+        android:text="hkh" />
 </LinearLayout>

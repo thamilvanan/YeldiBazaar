@@ -72,7 +72,7 @@ abstract class AppListFragment extends Fragment
 		ListView list = new ListView(getActivity());
 		list.setFastScrollEnabled(true);
 		list.setOnItemClickListener(this);
-		list.setDividerHeight(2);
+		list.setDividerHeight(3);
 		list.setAdapter(getAppListAdapter());
 		return list;
 	}

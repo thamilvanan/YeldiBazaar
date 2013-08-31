@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
 
 		staggeredGridView.setItemMargin(margin); // set the GridView margin
 
-		staggeredGridView.setPadding(4, 0, 4, 0); // have the margin
+		staggeredGridView.setPadding(0, 0, 0, 0); // have the margin
 		staggeredGridView.setAdapter(staggeredAdapter);
 		staggeredAdapter.notifyDataSetChanged();
 

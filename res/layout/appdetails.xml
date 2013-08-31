@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
         android:background="@color/black"
         android:text="APP DETAILS:"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -63,6 +64,8 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="marquee"
                 android:singleLine="true"
+                android:text="hello"
+                android:textColor="@color/bg8"
                 android:textSize="18sp"
                 android:textStyle="bold" />
             <TextView
@@ -71,6 +74,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/title"
+                android:text="hello"
+                android:textColor="@color/bg11"
                 android:textSize="12sp" />
             <TextView
                 android:id="@+id/status"
@@ -79,23 +84,26 @@
                 android:layout_alignParentLeft="true"
                 android:layout_below="@id/title"
                 android:layout_toLeftOf="@id/license"
+                android:text="hello"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
         </RelativeLayout>
     </LinearLayout>
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/black"
-        android:text="AVAILABLE VERSIONS:"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/bg9"
-        android:textStyle="bold" />
+    <!-- <TextView -->
+    <!-- android:id="@+id/textView2" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:background="@color/black" -->
+    <!-- android:text="AVAILABLE VERSIONS:" -->
+    <!-- android:textAppearance="?android:attr/textAppearanceMedium" -->
+    <!-- android:textColor="@color/bg9" -->
+    <!-- android:textStyle="bold" /> -->
     <ListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:dividerHeight="3dp"
         android:scrollbars="none" />
 </LinearLayout>

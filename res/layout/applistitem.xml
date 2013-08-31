@@ -83,5 +83,5 @@
         android:singleLine="true"
         android:text="Hello"
         android:textColor="@color/black"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 </RelativeLayout>

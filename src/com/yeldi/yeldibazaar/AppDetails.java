@@ -62,7 +62,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.yeldi.yeldibazaar.R;
+
 import com.yeldi.yeldibazaar.DB.CommaSeparatedList;
 import com.yeldi.yeldibazaar.compat.ActionBarCompat;
 import com.yeldi.yeldibazaar.compat.MenuManager;
@@ -478,7 +478,7 @@ public class AppDetails extends ListActivity {
 					try {
 						Permission permission = new Permission(this,
 								permissionName);
-						sb.append("\t• " + permission.getName() + '\n');
+						sb.append("\t* " + permission.getName() + '\n');
 					} catch (NameNotFoundException e) {
 						Log.d("FDroid", "Can't find permission '"
 								+ permissionName + "'");
