@@ -9,7 +9,7 @@
         android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/bg8" >
+        android:background="@color/bg4" >
         <com.yeldi.bazaar.utils.Header
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -35,12 +35,17 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:orientation="vertical" >
-        <com.astuetz.viewpager.extensions.PagerSlidingTabStrip
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="35dip"
-            android:background="@color/black" >
-        </com.astuetz.viewpager.extensions.PagerSlidingTabStrip>
+        <!-- <com.astuetz.viewpager.extensions.PagerSlidingTabStrip -->
+        <!-- android:id="@+id/tabs" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="35dip" -->
+        <!-- android:background="@color/black" > -->
+        <!-- </com.astuetz.viewpager.extensions.PagerSlidingTabStrip> -->
+        <com.yeldi.bazaar.utils.TitlePageIndicator
+            android:id="@+id/titles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black" />
     </LinearLayout>
     <android.support.v4.view.ViewPager
         xmlns:android="http://schemas.android.com/apk/res/android"

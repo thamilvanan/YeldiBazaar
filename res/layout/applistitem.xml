@@ -46,7 +46,7 @@
         android:paddingTop="4dp"
         android:singleLine="true"
         android:text="Hello"
-        android:textColor="@color/bg8"
+        android:textColor="@color/bg4"
         android:textSize="18sp"
         android:textStyle="bold" />
     <TextView

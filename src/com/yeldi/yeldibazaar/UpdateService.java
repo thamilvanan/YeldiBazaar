@@ -44,7 +44,6 @@ import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-import com.yeldi.yeldibazaar.R;
 
 public class UpdateService extends IntentService implements ProgressListener {
 
@@ -163,7 +162,7 @@ public class UpdateService extends IntentService implements ProgressListener {
 					sendStatus(
 							STATUS_INFO,
 							getString(R.string.status_connecting_to_repo,
-									repo.address));
+									"YeldiBazaar"));
 
 					StringBuilder newetag = new StringBuilder();
 					String err = RepoXMLHandler.doUpdate(getBaseContext(),
@@ -411,7 +410,7 @@ public class UpdateService extends IntentService implements ProgressListener {
 			String downloadedSize = Utils.getFriendlySize(event.progress);
 			String totalSize = Utils.getFriendlySize(event.total);
 			int percent = (int) ((double) event.progress / event.total * 100);
-			message = getString(R.string.status_download, repoAddress,
+			message = getString(R.string.status_download, "YeldiBazaar",
 					downloadedSize, totalSize, percent);
 		} else if (event.type == RepoXMLHandler.PROGRESS_TYPE_PROCESS_XML) {
 			String repoAddress = event.data

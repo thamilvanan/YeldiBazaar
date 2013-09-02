@@ -45,7 +45,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.astuetz.viewpager.extensions.PagerSlidingTabStrip;
+import com.yeldi.bazaar.utils.TitlePageIndicator;
 import com.yeldi.yeldibazaar.compat.TabManager;
 import com.yeldi.yeldibazaar.views.AppListFragmentPageAdapter;
 
@@ -274,7 +274,8 @@ public class FDroid extends FragmentActivity {
 	}
 
 	private void createViews() {
-		PagerSlidingTabStrip tab = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+		// PagerSlidingTabStrip tab = (PagerSlidingTabStrip)
+		// findViewById(R.id.tabs);
 		viewPager = (ViewPager) findViewById(R.id.main_pager);
 		viewPageAdapter = new AppListFragmentPageAdapter(this);
 		viewPager.setAdapter(viewPageAdapter);
@@ -285,7 +286,9 @@ public class FDroid extends FragmentActivity {
 		// getTabManager().selectTab(position);
 		// }
 		// });
-		tab.setViewPager(viewPager);
+		// tab.setViewPager(viewPager);
+		TitlePageIndicator titlePageIndicator = (TitlePageIndicator) findViewById(R.id.titles);
+		titlePageIndicator.setViewPager(viewPager);
 	}
 
 	// For receiving results from the UpdateService when we've told it to

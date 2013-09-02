@@ -36,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="10dp"
         android:background="@color/black"
         android:text="APP DETAILS:"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -65,7 +64,7 @@
                 android:ellipsize="marquee"
                 android:singleLine="true"
                 android:text="hello"
-                android:textColor="@color/bg8"
+                android:textColor="@color/bg4"
                 android:textSize="18sp"
                 android:textStyle="bold" />
             <TextView
